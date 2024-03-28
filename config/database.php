@@ -115,9 +115,11 @@ return [
         'client' => env('REDIS_CLIENT', 'predis'),
 
         'default' => [
+            'url'      => env('REDIS_URL', null),
             'scheme'   => env('REDIS_SCHEME', 'tcp'),
             'path'     => env('REDIS_PATH'),
             'host'     => env('REDIS_HOST', '127.0.0.1'),
+            'username' => env('REDIS_USERNAME', null),
             'password' => env('REDIS_PASSWORD', null),
             'port'     => env('REDIS_PORT', 6379),
             'database' => env('REDIS_DATABASE', 0),
